@@ -12,6 +12,7 @@ int check_cycle(listint_t *list)
 {
 	listint_t *p2;
 	listint_t *prev;
+
 	p2 = list;
 	prev = list;
 
@@ -24,6 +25,7 @@ int check_cycle(listint_t *list)
 		{
 			list = prev;
 			prev =  p2;
+
 			while (1)
 			{
 				p2 = prev;
