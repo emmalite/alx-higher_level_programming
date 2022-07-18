@@ -1,14 +1,21 @@
 #!/usr/bin/python3
+
 def safe_print_list(my_list=[], x=0):
-    count = 0
 
-    for i in range(x):
+    counter = 1
+
+    while (counter <= x):
+
         try:
-            print("{}".format(my_list[i]), end='')
-        except:
-            break
-        else:
-            count += 1
 
-    print()
-    return (count)
+            print("{}".format(my_list[counter - 1]), end="")
+
+            counter += 1
+
+        except Exception as error:
+
+            break
+
+    print("")
+
+    return counter - 1
